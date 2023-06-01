@@ -32,12 +32,31 @@ This function requires:
 
 1.	Login to FortiManager (running 7.4)
 2.	From the left navigational menu, click on Device Manager -> Scripts -> Import CLI Scripts
+
 ![Netskope](./Pictures/1.png)
-   
+
+3.	From the dialogue box, drag and drop CLI files or click on Add Files and then click on import. 
+
 ![Netskope](./Pictures/2.png)
 
+4.	Once the scripts are uploaded, user can run them one by one to the target devices (FortiGates) 
+
 ![Netskope](./Pictures/3.png)
-    
+ 
+5.	Click OK to confirm running script. 
+ 
 ![Netskope](./Pictures/4.png)
-        
+      
+6.	You should see successful installation of the script on target device. 
+      
 ![Netskope](./Pictures/5.png)
+
+7.	Repeat the process till all scripts are installed successfully, and then follow the required steps in the requirement section of this document, needed to fine tune the configuration per device for the final integration of FortiGate with Netskope Gateway. 
+
+## Support:
+
+Fortinet-provided scripts in this and other GitHub projects do not fall under the regular Fortinet technical support scope and are not supported by FortiCare Support Services. For direct issues, please refer to the Issues tab of this GitHub project. For other questions related to this project, contact github@fortinet.com.
+
+## License:
+License © Fortinet Technologies. All rights reserved.
+
