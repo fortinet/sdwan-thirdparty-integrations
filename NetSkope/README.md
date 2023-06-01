@@ -28,6 +28,10 @@ This function requires:
     -	Performance SLAs with preferred values
     -	SDWAN rules to steer web traffic to Netskope gateway 
 
+## How to use the project: 
+
+1.	Login to FortiManager (running 7.4)
+2.	From the left navigational menu, click on Device Manager -> Scripts -> Import CLI Scripts
 ![Netskope](./Pictures/1.png)
    
 ![Netskope](./Pictures/2.png)
