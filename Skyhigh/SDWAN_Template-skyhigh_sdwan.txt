@@ -1,0 +1,53 @@
+config system sdwan
+     config zone
+          edit "virtual-wan-link"
+          next
+          edit "WAN1"
+          next
+          edit "WAN2"
+          next
+     end
+     config members
+          edit 1
+               set interface "port9"
+               set zone "WAN1"
+          next
+          edit 2
+               set interface "port10"
+               set zone "WAN2"
+          next
+     end
+     config health-check
+          edit "skyhigh_traffic"
+               set server 138.40.15.15
+               set update-cascade-interface disable
+               set update-static-route disable
+               set members 0
+               set detect-mode prefer-passive
+               config sla
+                    edit 1
+                         set latency-threshold 250
+                         set jitter-threshold 50
+                         set packetloss-threshold 1
+                    next
+               end
+          next
+     end
+     config service
+          edit 1
+               set name "skyhigh_sdwan_rule"
+               set mode priority
+               set dst "all"
+               set src "RFC1918-192"
+               set health-check "skyhigh_traffic"
+               set priority-members 2 1
+               set priority-zone "WAN2" "WAN1"
+          next
+     end
+end
+config policy package settings
+     set checksum "1685540148-1643052146"
+end
+config wanprof settings
+     set description ""
+end
