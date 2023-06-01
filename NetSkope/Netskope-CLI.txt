@@ -1,0 +1,19 @@
+config firewall policy
+    edit 100
+        set srcintf "internal"
+        set dstintf "NSKP-POP-XXXXX"
+        set srcaddr "all"
+        set dstaddr "all"
+        set action accept
+        set schedule "always
+        set service "HTTP" "HTTPS"
+        set logtraffic all
+        set nat enable
+    next
+end
+config router static
+    edit 100
+        set priority 10
+        set device "NSKP-POP-XXXXX"
+    next
+end
