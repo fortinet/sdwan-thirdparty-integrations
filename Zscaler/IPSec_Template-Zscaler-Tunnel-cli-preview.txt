@@ -1,0 +1,37 @@
+config firewall address
+     edit "FGT-Zscaler_remote_subnet_1"
+          set allow-routing enable
+     next
+end
+config vpn ipsec phase1-interface
+     edit "FGT-Zscaler"
+          set type ddns
+          set interface "port1"
+          set comments "VPN: FGT-Zscaler [Created by IPSEC Template]"
+          set dhgrp 2 5 14
+          set proposal aes256-sha512 aes256-sha384 aes256-sha256
+          set peertype any
+          set localid "1"
+          set remotegw-ddns "ZscalerSFhost"
+          set net-device disable
+          set psksecret ********
+     next
+end
+config system interface
+     edit "FGT-Zscaler"
+          set type tunnel
+     next
+end
+config router static
+     edit 0
+          set device "FGT-Zscaler"
+          set comment "VPN: FGT-Zscaler [Created by IPSEC Template]"
+          set dstaddr "FGT-Zscaler_remote_subnet_1"
+     next
+     edit 0
+          set distance 254
+          set comment "VPN: FGT-Zscaler [Created by IPSEC Template]"
+          set blackhole enable
+          set dstaddr "FGT-Zscaler_remote_subnet_1"
+     next
+end

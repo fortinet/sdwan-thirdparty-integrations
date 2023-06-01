@@ -1,0 +1,81 @@
+config system sdwan
+     set status enable
+     config zone
+          edit "virtual-wan-link"
+          next
+          edit "Internet_A"
+          next
+          edit "Internet_B"
+          next
+          edit "HUB1"
+          next
+          edit "HUB2"
+          next
+     end
+     config members
+          edit 1
+               set interface "port1"
+               set zone "Internet_A"
+               set cost 5
+          next
+          edit 2
+               set interface "port2"
+               set zone "Internet_B"
+               set cost 10
+          next
+          edit 3
+               set interface "Zscaler-SF"
+               set zone "HUB1"
+               set cost 5
+          next
+          edit 4
+               set interface "Zscaler-DC"
+               set zone "HUB2"
+               set cost 10
+          next
+     end
+     config health-check
+          edit "Zscaler_vpntest"
+               set server gateway.zscaler-cloud.net
+               set protocol http
+               set interval 1000
+               set failtime 10
+               set update-cascade-interface disable
+               set update-static-route disable
+               set sla-fail-log-period 10
+               set sla-pass-log-period 10
+               set members 4 3
+               set embed-measured-health enable
+               config sla
+                    edit 1
+                         set latency-threshold 250
+                         set jitter-threshold 100
+                         set packetloss-threshold 2
+                    next
+               end
+          next
+     end
+     config service
+          edit 1
+               set name "HTTPS-Zscaler-out"
+               set mode sla
+               set protocol 6
+               set start-port 443
+               set end-port 443
+               set dst "all"
+               set src "all"
+               set priority-members 4 3
+               config sla
+                    edit "Zscaler_vpntest"
+                         set id 1
+                    next
+               end
+          next
+     end
+end
+config policy package settings
+     set checksum "1685548475-617708069"
+end
+config wanprof settings
+     set description ""
+end
