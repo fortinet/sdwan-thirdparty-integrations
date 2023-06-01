@@ -27,4 +27,3 @@ This function requires:
     -	SDWAN Zones and member interfaces for underlay and overlay 
     -	Performance SLAs with preferred values
     -	SDWAN rules to steer web traffic to Netskope gateway 
-![Netskope](./Pictures/1.png)
