@@ -16,7 +16,7 @@ Fortinet products are designed to integrate within customer environments to prov
 
 ## Automation:
 
-Fortinet provides a range of APIs, software development kits (SDKs), and integration documentation to facilitate these integrations. They offer standardized protocols like RESTful APIs, SNMP (Simple Network Management Protocol), and Syslog for seamless interoperability with other systems. Additionally, Fortinet's FortiPartner program supports collaboration with partners to deliver integrated solutions to customers.
+Fortinet provides a range of APIs, software development kits (SDKs), and integration documentation to facilitate these integrations. Fortinet offers standardized protocols like RESTful APIs, SNMP (Simple Network Management Protocol), and Syslog for seamless interoperability with other systems. Additionally, Fortinet's FortiPartner program supports collaboration with partners to deliver integrated solutions to customers.
 
 And Finally, it's worth noting that the specific integrations available may vary, depending on the Fortinet products being used and the requirements of the vendors, partners, and customers involved. For detailed information and guidance on integration possibilities, it is recommended to consult Fortinet's official documentation, support resources, or engage with sales and technical teams.
 
