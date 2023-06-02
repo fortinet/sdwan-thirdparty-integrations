@@ -4,7 +4,7 @@ Fortinet, a leading cybersecurity company, offers a range of products and soluti
 
 ## Vendor Integration: 
 
-Fortinet products can integrate with other technology vendors to provide comprehensive security solutions. For example, Fortinet's Security Fabric architecture allows integration with third-party products such as SIEM (Security Information and Event Management) systems, endpoint security solutions, and identity and access management (IAM) platforms. This integration enables seamless sharing of security intelligence and enhances threat detection and response capabilities. In the project, we have shown SD-WAN solution integration with NetSkope, Skyhigh and Zscaler. 
+Fortinet products can integrate with other technology vendors to provide comprehensive security solutions. For example, Fortinet's Security Fabric architecture allows integration with third-party products such as SIEM (Security Information and Event Management) systems, endpoint security solutions, and identity and access management (IAM) platforms. This integration enables seamless sharing of security intelligence and enhances threat detection and response capabilities. In this project, we have shown SD-WAN solution integration with NetSkope, Skyhigh and Zscaler. 
 
 ## Partner Integration: 
 
