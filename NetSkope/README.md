@@ -15,7 +15,7 @@ This function requires:
     - Source and Destination IP addresses or blocks
     - Services allow or block per requirement
 - Static Route(s): 
-    - et device IP or FQDN and priority 
+    - Set device IP or FQDN and priority 
 - IPsec Template: provided IPsec CLI is for reference only as specific configuration will be required for IPsec tunnels. 
     - Remote Device: IP address or Dynamic DNS
     -	Remote Gateway IP and subnet
@@ -52,6 +52,10 @@ This function requires:
 ![Netskope](./Pictures/5.png)
 
 7.	Repeat the process till all scripts are installed successfully, and then follow the required steps in the requirement section of this document, needed to fine tune the configuration per device for the final integration of FortiGate with Netskope Gateway. 
+
+## NetSkope Documentation: 
+NetSkope provides documentation around IPSec integration with FortiGate. This guide illustrates how to configure a VPN IPSec tunnel between Netskope and a FortiGate firewall device. The provided configuration example uses a FortiGate device running FortiOS version 6.4.3. However, it can work for all FortiOS versions.
+https://docs.netskope.com/en/netskope-ipsec-with-fortinet-fortigate.html
 
 ## Support:
 
