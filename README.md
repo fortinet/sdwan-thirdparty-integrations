@@ -1,4 +1,4 @@
-# Introduction: 
+## Introduction: 
 
 Fortinet, a leading cybersecurity company, offers a range of products and solutions that can be integrated with vendors, partners, and customers to enhance their cybersecurity capabilities. In this project we are providing SDWAN solution integration with few of the vendors, but Fortinet’s integration capabilities exceed far beyond just SD-WAN. Here are some common integration scenarios:
 
@@ -14,8 +14,15 @@ Fortinet works closely with technology partners to create joint solutions and in
 
 Fortinet products are designed to integrate within customer environments to provide end-to-end security. This can include integration with network infrastructure, such as switches and routers, to enforce security policies and ensure consistent protection across the network. Fortinet's security products can also integrate with customer-owned or third-party security tools to centralize and correlate security events and streamline incident response.
 
-## Automation: 
+## Automation:
 
 Fortinet provides a range of APIs, software development kits (SDKs), and integration documentation to facilitate these integrations. They offer standardized protocols like RESTful APIs, SNMP (Simple Network Management Protocol), and Syslog for seamless interoperability with other systems. Additionally, Fortinet's FortiPartner program supports collaboration with partners to deliver integrated solutions to customers.
 
 And Finally, it's worth noting that the specific integrations available may vary, depending on the Fortinet products being used and the requirements of the vendors, partners, and customers involved. For detailed information and guidance on integration possibilities, it is recommended to consult Fortinet's official documentation, support resources, or engage with sales and technical teams.
+
+## Support:
+
+Fortinet-provided scripts in this and other GitHub projects do not fall under the regular Fortinet technical support scope and are not supported by FortiCare Support Services. For direct issues, please refer to the Issues tab of this GitHub project. For other questions related to this project, contact github@fortinet.com.
+
+## License:
+License © Fortinet Technologies. All rights reserved.
