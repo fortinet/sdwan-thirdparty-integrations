@@ -8,6 +8,14 @@ This diagram is referenced form Fortinet documentation below and attached CLI sc
 
 ## Requirements:
 
+Three CLI text files are provided, however, “FirewallPolicy_Route_Zscaler” is only for reference, and provided configuration in this file, is a generic CLI script for policy and route configurations. User will need to configure static route(s) or routing for reaching Zscaler GW and Firewall policy will also be specific to deployment needs, with proper, source and destination addresses, outgoing and incoming interfaces, and allowed traffic or services, etc. 
+
+1. FirewallPolicy_Route_Zscaler: (For Reference only, it is a sample config, user must not deploy this script but customize it before deploying per deployment needs, to avoid any connectivity issues or network interruptions)
+2. IPsec_Template_Zscaler: (For Deploying IPsec Tunnel)
+3. SDWAN_Template_Zscaler: (Deploying SDWAN Rules, SLAs, SDWAN-Interface Configuration)
+
+
+
 Since there are many dependencies and variables involved in order to configure SD-WAN correctly, therefore, provided CLI templates are only functional when precise information is provided for the following objects:
 
 This function requires: 
