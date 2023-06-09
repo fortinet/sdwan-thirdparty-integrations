@@ -4,7 +4,7 @@ This project is provided (in FortiManger version 7.4) as a general guideline wit
 
 This diagram is referenced form Fortinet documentation below and attached CLI scripts are configured according to the diagram, however, only one FortiGate device configuration is provided in the CLI vs two in the diagram architecture, but the concept is the same. FortiGate Site A has two Underlay links (port1 and port2) each configured with one overlay (Pri Zscaler-SF and Sec Zscaler-DC overlays) per underlay, terminating at Zscaler cloud gateway. 
 
-
+![Netskope](./Pictures/6.png)
 
 ## Requirements:
 
