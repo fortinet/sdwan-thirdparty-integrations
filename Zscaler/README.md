@@ -2,6 +2,10 @@
 
 This project is provided (in FortiManger version 7.4) as a general guideline with configured objects, needed to integrate with Zscaler cloud security services. One should consider understanding the requirements of the connectivity in terms of routing, Underlay and Overlay (IPsec) configurations and SDWAN rules for application steering. Three templates provided contain all the needed elements to integrate with said vendor but not limited to, as there may be additional configuration required due to unique circumstances for Firewall policies to allow traffic, Routing and Overlay (IPSec) configurations, along with SDWAN rules that will ultimately, steer HTTP and HTTPs traffic from FortiGate to Zscaler services. 
 
+This diagram is referenced form Fortinet documentation below and attached CLI scripts are configured according to the diagram, however, only one FortiGate device configuration is provided in the CLI vs two in the diagram architecture, but the concept is the same. FortiGate Site A has two Underlay links (port1 and port2) each configured with one overlay (Pri Zscaler-SF and Sec Zscaler-DC overlays) per underlay, terminating at Zscaler cloud gateway. 
+
+
+
 ## Requirements:
 
 Since there are many dependencies and variables involved in order to configure SD-WAN correctly, therefore, provided CLI templates are only functional when precise information is provided for the following objects:
